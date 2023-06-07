@@ -1,0 +1,8 @@
+distlib==0.3.6
+filelock==3.9.0
+pbr==5.11.1
+platformdirs==3.0.0
+stevedore==5.0.0
+virtualenv==20.19.0
+virtualenv-clone==0.5.7
+virtualenvwrapper==4.8.4
