@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'embed_video',
     'posts',
+    'mixes',
 
 ]
 
