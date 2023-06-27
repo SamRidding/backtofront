@@ -5,6 +5,7 @@ from embed_video.fields import EmbedVideoField
 class Mix(models.Model):
 
     title = models.CharField(max_length=200, blank=False)
+    slug = models.SlugField(max_length=200, unique=True, default="")
     image = models.ImageField(
         upload_to='images/', blank=False
     )

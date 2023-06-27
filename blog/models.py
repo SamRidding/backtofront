@@ -7,6 +7,7 @@ class Post(models.Model):
 
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=200, blank=False)
+    slug = models.SlugField(max_length=200, unique=True, default="")
     image = models.ImageField(
         upload_to='images/', blank=False
     )
