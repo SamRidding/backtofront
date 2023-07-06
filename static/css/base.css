@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;700;800&family=Pragati+Narrow:wght@400;700&family=Six+Caps&family=Work+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,4 +8,10 @@
 
 body {
     background-color: black;
+}
+
+#logo {
+    color: white;
+    font-family: 'Aleo', serif;
+    padding: 0.4rem 1rem;
 }
