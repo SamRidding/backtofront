@@ -1,9 +1,20 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
 
 {% block content %}
 
 <div>
-    Back To Front
+    <div id="nav-link-cont">
+        <ul id="nav-links">
+            <li class="nav-link">BLOG</li>
+            <li class="nav-link">MIXES</li>
+            <li class="nav-link">CONTACT</li>
+        </ul>
+    </div>
 </div>
 
 {% endblock %}
