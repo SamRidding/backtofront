@@ -20,3 +20,8 @@ a {
     font-family: 'Aleo', serif;
     padding: 1rem 0 0 2rem;
 }
+
+a:hover {
+    transition-duration: 500ms;
+    color: #a8ff57;
+}
