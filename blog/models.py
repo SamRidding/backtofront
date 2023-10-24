@@ -18,8 +18,8 @@ class Post(models.Model):
     audio_four = EmbedVideoField(blank=True)
     audio_five = EmbedVideoField(blank=True)
     draft = models.BooleanField()
-    posted_on = models.DateTimeField(auto_now_add=True)
-    edited_at = models.DateTimeField(auto_now_add=True)
+    posted_on = models.DateField(auto_now_add=True)
+    edited_at = models.DateField(auto_now_add=True)
 
     class Meta:
         ordering = ['-posted_on']
