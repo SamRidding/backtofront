@@ -7,15 +7,31 @@
 
 {% block content %}
 
+<section id="post-head" >
+
+    <div id="post-head-img">
+        <img class="post-img-1" src="{{ post.image.url }}" alt="music release artwork">
+    
+        <img class="post-img-2" src="{{ post.image.url }}" alt="music release artwork">
+
+        <img class="post-img" src="{{ post.image.url }}" alt="music release artwork">
+
+        <img class="post-img-2" src="{{ post.image.url }}" alt="music release artwork">
+    
+        <img class="post-img-1" src="{{ post.image.url }}" alt="music release artwork">
+    </div>
+    
+</section>
+
 <section id="post-section">
 
     <div class="post-title">
         <h1>{{ post.title }}</h1>
     </div>
 
-    <div class="post-img-contain">
+    <!-- <div class="post-img-contain">
         <img class="post-img" src="{{ post.image.url }}" alt="music release artwork">
-    </div>
+    </div> -->
 
     <div class="post-info">
         <h4>Words by {{ post.author }}</h4>
