@@ -10,12 +10,12 @@
 {% endblock %}
 
 {% block content %}
-<section>
+<section id="posts-cont">
         <div id="post-list-cont">
             {% for post in post_list %}
             <div class="blog-post">
                 <a href="{% url 'blog_post' post.slug  %}">
-                    <div class="post-img-contain">
+                    <div class="post-img-cont">
                         <img class="post-img" src="{{ post.image.url }}" alt="music cover artwork">
                     </div>
                     <h3 class="post-title">{{ post.title }}</h3>
