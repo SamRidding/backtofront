@@ -17,8 +17,10 @@
                 <a href="{% url 'blog_post' post.slug  %}">
                     <div class="post-img-cont">
                         <img class="post-img" src="{{ post.image.url }}" alt="music cover artwork">
+                        <div class="post-title">
+                            <h3>{{ post.title }}</h3>
+                        </div>
                     </div>
-                    <h3 class="post-title">{{ post.title }}</h3>
                 </a>
             </div>
             {% endfor %}

@@ -1,9 +1,27 @@
-#posts-cont {
-    width: 100vw;
+#post-list-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
 
-#post-list-cont {
+.blog-post {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.post-img-cont {
+    position: relative;
+}
+
+.post-img {
+    height: 100%;
+    width: 100%;
+}
+
+.post-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
