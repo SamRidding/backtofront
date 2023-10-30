@@ -16,6 +16,8 @@
 .post-img {
     height: 100%;
     width: 100%;
+    filter: grayscale(1) blur(5px);
+    clip-path: inset(0 0 0 0);
 }
 
 .post-title {
@@ -24,4 +26,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.post-img:hover {
+    transition-duration: 1s;
+    filter: grayscale(0) blur(0);
+}
+
+.blog-post:hover {
+    transition-duration: 1s;
+    color: white;
 }
