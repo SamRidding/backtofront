@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from embed_video.fields import EmbedVideoField
+from taggit.managers import TaggableManager
 
 
 class Post(models.Model):
@@ -20,6 +21,8 @@ class Post(models.Model):
     draft = models.BooleanField()
     posted_on = models.DateField(auto_now_add=True)
     edited_at = models.DateField(auto_now_add=True)
+
+    tags = TaggableManager()
 
     class Meta:
         ordering = ['-posted_on']
