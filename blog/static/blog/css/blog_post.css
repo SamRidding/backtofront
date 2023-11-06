@@ -33,5 +33,22 @@
     color: white;
     font-family: 'Pragati Narrow', sans-serif;
     text-align: center;
+    margin: 0 4rem;
 }
 
+#post-tag-section {
+    color: white;
+    margin: 0 4rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.post-tags {
+    color: white;
+    display: flex;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.post-tag {
+    margin: 0 0.4rem;
+}
