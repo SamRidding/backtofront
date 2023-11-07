@@ -1,3 +1,5 @@
+from typing import Any
+from django.db.models.query import QuerySet
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 
@@ -40,3 +42,14 @@ class BlogPost(View):
                 "post": post,
             },
         )
+
+
+class GenreFilter(generic.ListView):
+    """View to filter blog posts by genre tag"""
+
+    model = Post
+    template_name = "blog/blog.html"
+
+    def get_queryset(self):
+
+        return Post.objects.filter(tags__slug=self.kwargs.get('tag_slug'))
