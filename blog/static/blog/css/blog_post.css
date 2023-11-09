@@ -36,17 +36,24 @@
     margin: 0 4rem;
 }
 
+.post-content {
+    font-size: 1.2rem;
+}
+
+.music-preview {
+    margin: 4rem 0;
+}
+
 #post-tag-section {
     color: white;
-    margin: 0 4rem;
-    position: absolute;
-    bottom: 1rem;
+    margin: 1rem 4rem;
 }
 
 .post-tags {
     color: white;
     display: flex;
     font-family: 'Pragati Narrow', sans-serif;
+    font-size: 1.2rem;
 }
 
 .post-tag {
