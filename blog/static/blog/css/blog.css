@@ -28,6 +28,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     pointer-events: none;
+    color: #a8ff57;
 }
 
 .post-img:hover {
