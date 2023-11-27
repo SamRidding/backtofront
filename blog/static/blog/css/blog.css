@@ -32,11 +32,11 @@
 }
 
 .post-img:hover {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     filter: grayscale(0) blur(0);
 }
 
 .blog-post:hover {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     color: white;
 }
