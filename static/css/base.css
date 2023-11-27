@@ -10,6 +10,16 @@ body {
     background-color: black;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
 a {
     text-decoration: none;
     color: white;
