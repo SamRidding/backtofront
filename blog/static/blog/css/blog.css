@@ -28,7 +28,12 @@
     transform: translate(-50%, -50%);
     text-align: center;
     pointer-events: none;
-    color: #a8ff57;
+    color: white;
+}
+
+.post-title h2 {
+    -webkit-text-stroke: 1px black;
+    font-weight: 700;
 }
 
 .post-img:hover {
