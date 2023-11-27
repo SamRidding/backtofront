@@ -30,14 +30,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
     font-family: 'Pragati Narrow', sans-serif;
+    color: white;
     text-align: center;
     margin: 0 4rem;
 }
 
-.post-content {
+.post-title {
+    font-size: 1.6rem;
+}
+
+.post-info {
     font-size: 1.2rem;
+}
+
+.post-content {
+    font-family: 'Glegoo', serif;
+    margin: 2rem;
 }
 
 .music-preview {
