@@ -13,6 +13,10 @@ class Post(models.Model):
         upload_to='images/', blank=False
     )
     content = models.TextField(blank=False)
+    content_two = models.TextField(blank=True)
+    content_three = models.TextField(blank=True)
+    content_four = models.TextField(blank=True)
+    content_five = models.TextField(blank=True)
     audio_one = EmbedVideoField(blank=True)
     audio_two = EmbedVideoField(blank=True)
     audio_three = EmbedVideoField(blank=True)
