@@ -16,6 +16,7 @@
   <body>
 
     <div id="search">
+      <p class="close" onclick="toggleSearch()">X</p>
       <div class="search-bar">
           <form method="POST" action="#">
               {% csrf_token %}
@@ -59,10 +60,10 @@
     <script>
       function toggleSearch() {
         var search = document.getElementById('search');
-        if (search.style.display === "none") {
-          search.style.display = "flex";
+        if (search.style.display === "flex") {
+          search.style.display = "none"
         } else {
-          search.style.display = "none";
+          search.style.display = "flex"
         }
       }
     </script>

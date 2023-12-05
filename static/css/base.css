@@ -17,6 +17,16 @@
     align-items: center;
 }
 
+.close {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    cursor: pointer;
+}
+
 .search-bar {
     width: 25%;
     box-sizing: border-box;
