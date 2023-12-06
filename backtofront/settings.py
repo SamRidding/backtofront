@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'embed_video',
-    'mixes',
     'blog',
     'taggit',
 
