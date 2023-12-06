@@ -23,6 +23,7 @@ class Post(models.Model):
     audio_four = EmbedVideoField(blank=True)
     audio_five = EmbedVideoField(blank=True)
     draft = models.BooleanField()
+    mix = models.BooleanField()
     posted_on = models.DateField(auto_now_add=True)
     edited_at = models.DateField(auto_now_add=True)
 
