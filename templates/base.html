@@ -18,7 +18,7 @@
     <div id="search">
       <p class="close" onclick="toggleSearch()">X</p>
       <div class="search-bar">
-          <form method="POST" action="#">
+          <form method="POST" action="{% url 'search' %}">
               {% csrf_token %}
               <input type="search" name="searched">
               <button id="search-arrow" type="submit">
