@@ -30,6 +30,15 @@
       </div>
     </div>
 
+    <div id="contact">
+      <div class='close' onclick="toggleContact()">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="contact-info">
+          <p>For all contact please hit up sam@backtofront.com</p>
+      </div>
+    </div>
+
     <div id="loader">
       <div class="logo-loader">
           <h2>BACK TO FRONT</h2>
@@ -62,6 +71,17 @@
     <script>
       function toggleSearch() {
         var search = document.getElementById('search');
+        if (search.style.display === "flex") {
+          search.style.display = "none"
+        } else {
+          search.style.display = "flex"
+        }
+      }
+    </script>
+
+    <script>
+      function toggleContact() {
+        var search = document.getElementById('contact');
         if (search.style.display === "flex") {
           search.style.display = "none"
         } else {
