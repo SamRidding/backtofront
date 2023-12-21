@@ -29,6 +29,7 @@
     text-align: center;
     pointer-events: none;
     color: white;
+    line-height: normal;
 }
 
 .post-title h2 {
@@ -44,4 +45,45 @@
 .blog-post:hover {
     transition-duration: 0.5s;
     color: white;
+}
+
+/* ------------------------------------------- Desktop Screens */
+
+@media only screen and (max-width: 1200px) {
+
+    .post-title h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* ------------------------------------------- Laptop Screens */
+
+@media only screen and (max-width: 1024px) {
+
+    .post-title h2 {
+        font-size: 1rem;
+    }
+
+}
+
+/* ------------------------------------------- Tablet Screens */
+
+@media only screen and (max-width: 768px) {
+
+    #post-list-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ------------------------------------------- Mobile Screens */
+
+@media only screen and (max-width: 480px) {
+
+    #post-list-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
