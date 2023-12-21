@@ -16,7 +16,9 @@
   <body>
 
     <div id="search">
-      <p class="close" onclick="toggleSearch()">X</p>
+      <div class='close' onclick="toggleSearch()">
+        <i class="fa-solid fa-x"></i>
+      </div>
       <div class="search-bar">
           <form method="POST" action="{% url 'search' %}">
               {% csrf_token %}
