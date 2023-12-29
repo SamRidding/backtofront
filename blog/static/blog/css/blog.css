@@ -1,7 +1,8 @@
 #post-list-cont {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    row-gap: 0.25rem;
+    column-gap: 0.5rem;
 }
 
 .blog-post {
