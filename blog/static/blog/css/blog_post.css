@@ -6,7 +6,6 @@
 #post-head-img {
     display: flex;
     flex-direction: row;
-    height: 24rem;
 }
 
 .post-img-1 {
