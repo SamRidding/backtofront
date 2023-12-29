@@ -76,6 +76,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .post-img {
+        filter: grayscale(0) blur(0);
+    }
+
 }
 
 /* ------------------------------------------- Mobile Screens */
