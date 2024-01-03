@@ -65,3 +65,17 @@
 .post-tag {
     margin: 0 0.4rem;
 }
+
+/* ------------------------------------------- Tablet Screens */
+
+@media only screen and (max-width: 768px) {
+
+    .post-title {
+        font-size: 1.4rem;
+    }
+
+    .post-content {
+        font-size: 1rem;
+    }
+
+}
