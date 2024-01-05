@@ -46,7 +46,9 @@
 }
 
 .music-preview {
-    margin: 4rem 0;
+    margin: 4rem auto;
+    width: 75%;
+    height: 400px;
 }
 
 #post-tag-section {
