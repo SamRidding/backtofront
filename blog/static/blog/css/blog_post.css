@@ -43,6 +43,7 @@
 .post-content {
     font-family: 'Glegoo', serif;
     text-align: left;
+    margin-top: 1rem;
 }
 
 .music-preview {
@@ -86,12 +87,25 @@
 
 @media only screen and (max-width: 480px) {
 
+    #post-section {
+        margin: 0 1rem;
+    }
+
     .post-title {
         font-size: 1rem;
     }
 
     .post-content {
         font-size: 0.8rem;
+    }
+
+    .music-preview {
+        width: 100%;
+        height: 300px;
+    }
+
+    .post-info {
+        font-size: 1rem;
     }
 
 }
