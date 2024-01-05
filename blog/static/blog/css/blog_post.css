@@ -81,6 +81,10 @@
         font-size: 1rem;
     }
 
+    .music-preview {
+        width: 100%;
+    }
+
 }
 
 /* ------------------------------------------- Mobile Screens */
