@@ -54,7 +54,11 @@
 
   <div class="post-content">{{ post.content|safe }}</div>
 
+  {% if post.audio_one == '' %}
+    
+  {% else %}
   <div class="music-preview">{% video post.audio_one '100% x 100%' %}</div>
+  {% endif%}
 
   <div class="post-tags">
     {% for tag in post.tags.all %}
