@@ -13,6 +13,13 @@ class Blog(generic.ListView):
     template_name = "blog/blog.html"
 
 
+class Mixes(generic.ListView):
+    """View to display posts on blog page"""
+
+    model = Post
+    template_name = "blog/mixes.html"
+
+
 class BlogPost(View):
     """
     View for individual blog posts, returning all post model
