@@ -17,14 +17,14 @@
             {% for post in post_list %}
                 {% if post.mix is True %}
                 <div class="mix">
-                    <!-- <a href="{% url 'blog_post' post.slug  %}"> -->
                         <div class="mix-img-cont">
-                            <img class="mix-img" src="{{ post.image.url }}" alt="music cover artwork">
+                            <a href="{% url 'blog_post' post.slug  %}">
+                                <img class="mix-img" src="{{ post.image.url }}" alt="music cover artwork">
+                            </a>
                         </div>
                         <div class="emb-mix">
                             {% video post.audio_one '100% x 100%' %}
                         </div>
-                    <!-- </a> -->
                 </div>
                 {% endif %}
             {% endfor %}
