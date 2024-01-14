@@ -1,0 +1,17 @@
+.mix {
+    height: 25%;
+    display: flex;
+}
+
+.mix-img-cont {
+    width: 25%;
+}
+
+.mix-img {
+    height: 100%;
+    width: 100%;
+}
+
+.emb-mix {
+    width: 75%;
+}

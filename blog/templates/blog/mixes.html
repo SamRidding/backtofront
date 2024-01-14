@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static '/blog/css/mixes.css' %}" />
+{% endblock %}
+
+{% block extra_title %}
+- Mixes
+{% endblock %}
+
+{% block content %}
+<section id="mixes">
+        <div id="mix-list-cont">
+            
+            {% for post in post_list %}
+                {% if post.mix is True %}
+                <div class="mix">
+                    <!-- <a href="{% url 'blog_post' post.slug  %}"> -->
+                        <div class="mix-img-cont">
+                            <img class="mix-img" src="{{ post.image.url }}" alt="music cover artwork">
+                        </div>
+                        <div class="emb-mix">
+                            {% video post.audio_one '100% x 100%' %}
+                        </div>
+                    <!-- </a> -->
+                </div>
+                {% endif %}
+            {% endfor %}
+            
+        </div>
+</section>
+
+{% endblock %}
