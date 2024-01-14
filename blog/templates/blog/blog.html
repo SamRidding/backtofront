@@ -13,16 +13,18 @@
 <section id="posts-cont">
         <div id="post-list-cont">
             {% for post in post_list %}
-            <div class="blog-post">
-                <a href="{% url 'blog_post' post.slug  %}">
-                    <div class="post-img-cont">
-                        <img class="post-img" src="{{ post.image.url }}" alt="music cover artwork">
-                        <div class="post-title">
-                            <h2>{{ post.title }}</h2>
+            {% if post.mix is False and post.draft is False %}
+                <div class="blog-post">
+                    <a href="{% url 'blog_post' post.slug  %}">
+                        <div class="post-img-cont">
+                            <img class="post-img" src="{{ post.image.url }}" alt="music cover artwork">
+                            <div class="post-title">
+                                <h2>{{ post.title }}</h2>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+                {% endif %}
             {% endfor %}
         </div>
 </section>
